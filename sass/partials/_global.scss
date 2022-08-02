@@ -1,0 +1,15 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: $font-main;
+  font-weight: $font-light;
+}
