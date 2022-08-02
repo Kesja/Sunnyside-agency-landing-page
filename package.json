@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "name": "sunnyside-agency-landing-page-main",
+  "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kesja/Sunnyside-agency-landing-page.git"
+  },
+  "author": "Kesja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kesja/Sunnyside-agency-landing-page/issues"
+  },
+  "homepage": "https://github.com/Kesja/Sunnyside-agency-landing-page#readme"
+}
