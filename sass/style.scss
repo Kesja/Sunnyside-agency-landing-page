@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 
 // font-family: 'Fraunces', serif;
 
@@ -14,19 +13,18 @@ body {
   max-width: 2000px;
   margin: 0 auto;
   font-size: 18px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 600;
   height: 2000px;
 }
 
 .main_header {
   background-image: url("/images/desktop/image-header.jpg");
-  height: 750px;
+  height: 850px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 40px;
-  
 
   .head_wrapper {
     width: 100%;
@@ -34,10 +32,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     .logo_title {
       color: white;
-      font-family: 'Barlow', sans-serif;
+      font-family: "Barlow", sans-serif;
       font-weight: 800;
       letter-spacing: 1px;
       font-size: 40px;
@@ -52,13 +50,34 @@ body {
       &.contact_link {
         text-transform: uppercase;
         color: black;
-        font-family: 'Fraunces', serif;
+        font-family: "Fraunces", serif;
         border-radius: 30px;
         background-color: white;
         padding: 18px;
         font-size: 15px;
       }
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px;
+    flex-direction: column;
 
+    .main_title {
+      color: white;
+      font-family: "Fraunces", serif;
+      font-weight: 900;
+      letter-spacing: 7px;
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+
+    .fa-angles-down {
+      margin: 60px;
+      color: white;
+      font-size: 100px;
     }
   }
 }

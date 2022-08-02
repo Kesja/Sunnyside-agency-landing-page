@@ -18,7 +18,7 @@ body {
 
 .main_header {
   background-image: url("/images/desktop/image-header.jpg");
-  height: 750px;
+  height: 850px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,4 +58,33 @@ body {
   background-color: white;
   padding: 18px;
   font-size: 15px;
+}
+.main_header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 120px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main_header .title .main_title {
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 7px;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.main_header .title .fa-angles-down {
+  margin: 60px;
+  color: white;
+  font-size: 100px;
 }/*# sourceMappingURL=style.css.map */
