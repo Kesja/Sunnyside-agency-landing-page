@@ -172,7 +172,7 @@ body {
   padding-right: 50px;
 }
 .container .adv-description {
-  color: gray;
+  opacity: 60%;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 25px;
@@ -190,8 +190,8 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -7px;
-  width: 155px;
+  left: -9px;
+  width: 140px;
   border-bottom: #ffd401 solid 10px;
   border-radius: 10px;
   opacity: 40%;
@@ -208,8 +208,8 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: -7px;
-  width: 155px;
+  left: -9px;
+  width: 140px;
   border-bottom: #ff7d6d solid 10px;
   border-radius: 10px;
   opacity: 40%;
@@ -238,7 +238,7 @@ body {
   width: 100%;
   bottom: 5%;
   text-align: center;
-  padding: 0 150px;
+  padding: 0 170px;
 }
 .container .desc-content .desc-title {
   font-family: "Fraunces", serif;
@@ -251,4 +251,43 @@ body {
   line-height: 1.5;
   margin-bottom: 25px;
   opacity: 60%;
+}
+
+.testimonials-title {
+  width: 100%;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  opacity: 45%;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin: 140px 0 80px 0;
+}
+
+.client {
+  padding: 0 35px;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 140px;
+}
+.client .client-img {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  margin-bottom: 40px;
+}
+.client .client-recomendation {
+  opacity: 65%;
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+.client .client-name {
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.client .position-desc {
+  opacity: 40%;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

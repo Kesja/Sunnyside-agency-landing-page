@@ -29,7 +29,7 @@
   }
 
   .adv-description {
-    color: gray;
+    opacity: 60%;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 25px;
@@ -49,8 +49,8 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: -7px;
-      width: 155px;
+      left: -9px;
+      width: 140px;
       border-bottom: #ffd401 solid 10px;
       border-radius: 10px;
       opacity: 40%;
@@ -70,8 +70,8 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: -7px;
-      width: 155px;
+      left: -9px;
+      width: 140px;
       border-bottom: #ff7d6d solid 10px;
       border-radius: 10px;
       opacity: 40%;
@@ -105,7 +105,7 @@
     width: 100%;
     bottom: 5%;
     text-align: center;
-    padding: 0 150px;
+    padding: 0 170px;
 
     .desc-title {
       font-family: $font-title;
