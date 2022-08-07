@@ -151,13 +151,14 @@ body {
 .container .item-txt {
   width: 50%;
   text-align: left;
-  padding: 0 150px;
+  padding: 0 130px;
 }
 .container .item-img {
   width: 50%;
   height: 100%;
 }
 .container .item-img img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -166,20 +167,21 @@ body {
 .container .adv-title {
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 20px;
+  padding-right: 50px;
 }
 .container .adv-description {
-  font-weight: 600;
   color: gray;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .container .btn {
   font-family: "Fraunces", serif;
   cursor: pointer;
   text-transform: uppercase;
+  font-size: 17px;
 }
 .container .btn .btn-yellow {
   position: relative;
@@ -190,7 +192,7 @@ body {
   bottom: 0;
   left: -7px;
   width: 155px;
-  border-bottom: #FFD401 solid 10px;
+  border-bottom: #ffd401 solid 10px;
   border-radius: 10px;
   opacity: 40%;
   z-index: -2;
@@ -208,7 +210,7 @@ body {
   bottom: 0;
   left: -7px;
   width: 155px;
-  border-bottom: #FF7D6D solid 10px;
+  border-bottom: #ff7d6d solid 10px;
   border-radius: 10px;
   opacity: 40%;
   z-index: -2;
@@ -216,4 +218,37 @@ body {
 .container .btn .btn-red:hover::after {
   z-index: -1;
   opacity: 100%;
+}
+.container .desc-design {
+  background-image: url("/images/desktop/image-graphic-design.jpg");
+  width: 66%;
+  height: 550px;
+  background-size: auto;
+  position: relative;
+}
+.container .desc-photo {
+  background-image: url("/images/desktop/image-photography.jpg");
+  width: 66%;
+  height: 550px;
+  background-size: auto;
+  position: relative;
+}
+.container .desc-content {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  text-align: center;
+  padding: 0 150px;
+}
+.container .desc-content .desc-title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  opacity: 60%;
+  margin-bottom: 20px;
+}
+.container .desc-content .desc-txt {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  opacity: 60%;
 }/*# sourceMappingURL=style.css.map */
