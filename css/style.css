@@ -140,6 +140,11 @@ body {
   }
 }
 
+@media (max-width: 1300px) and (min-width: 1000px) {
+  .main-header .title .main-title {
+    font-size: 50px;
+  }
+}
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,14 +228,14 @@ body {
   background-image: url("/images/desktop/image-graphic-design.jpg");
   width: 66%;
   height: 550px;
-  background-size: auto;
+  background-size: cover;
   position: relative;
 }
 .container .desc-photo {
   background-image: url("/images/desktop/image-photography.jpg");
   width: 66%;
   height: 550px;
-  background-size: auto;
+  background-size: cover;
   position: relative;
 }
 .container .desc-content {
@@ -253,6 +258,20 @@ body {
   opacity: 60%;
 }
 
+@media (max-width: 1300px) and (min-width: 1000px) {
+  .container .adv-title {
+    font-size: 30px;
+  }
+  .container .adv-description {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .container .desc-content {
+    padding: 0 100px;
+  }
+}
 .testimonials-title {
   width: 100%;
   text-align: center;
@@ -295,8 +314,15 @@ body {
 .img-gallery img {
   width: 400px;
   height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@media (max-width: 1300px) {
+  .img-gallery img {
+    width: 25%;
+  }
+}
 .container-social {
   display: -webkit-box;
   display: -ms-flexbox;

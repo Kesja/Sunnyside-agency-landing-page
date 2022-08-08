@@ -88,7 +88,7 @@
     background-image: url("/images/desktop/image-graphic-design.jpg");
     width: 66%;
     height: 550px;
-    background-size: auto;
+    background-size: cover;
     position: relative;
   }
 
@@ -96,7 +96,7 @@
     background-image: url("/images/desktop/image-photography.jpg");
     width: 66%;
     height: 550px;
-    background-size: auto;
+    background-size: cover;
     position: relative;
   }
 
@@ -120,5 +120,23 @@
       margin-bottom: 25px;
       opacity: 60%;
     }
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1000px) {
+  .container .adv-title {
+    font-size: 30px;
+  }
+
+  .container .adv-description {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+  .container .desc-content {
+    padding: 0 100px;
   }
 }
