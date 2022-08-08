@@ -290,4 +290,9 @@ body {
 .client .position-desc {
   opacity: 40%;
   font-size: 14px;
+}
+
+.img-gallery img {
+  width: 400px;
+  height: 400px;
 }/*# sourceMappingURL=style.css.map */
