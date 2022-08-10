@@ -11,17 +11,22 @@
 
 <body>
   <header class="main-header">
-    <nav class="head-wrapper">
+    <div class="container">
       <div class="logo">
         <h2 class="logo-title">sunnyside</h2>
+        <div class="nav-toggle" id="navToggle">
+          <img src="/images/icon-hamburger.svg" alt="Hamburger menu">
+        </div>
       </div>
-      <div class="nav-menu">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#" class="contact-link">Contact</a>
-      </div>
-    </nav>
+      <nav>
+        <div class="head-wrapper">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#" class="contact-link">Contact</a>
+        </div>
+      </nav>
+    </div>
     <div class="title">
       <h1 class="main-title">We are creatives</h1>
       <div class="arrow">
@@ -131,6 +136,7 @@
       </div>
     </div>
   </footer>
+  <script src="./main.js"></script>
 </body>
 
 </html>

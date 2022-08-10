@@ -24,34 +24,32 @@ body {
   padding: 40px 65px;
   position: relative;
 }
-.main-header .head-wrapper {
-  width: 100%;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main-header .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-.main-header .head-wrapper .logo-title {
+.main-header .container .logo .nav-toggle {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 45px;
+}
+.main-header .container .logo-title {
   color: white;
   font-family: "Barlow", sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 40px;
 }
-.main-header .head-wrapper .nav-menu a {
+.main-header .container .head-wrapper a {
   text-decoration: none;
   color: white;
   padding: 0 20px;
   margin-left: 13px;
   font-size: 18px;
 }
-.main-header .head-wrapper .nav-menu a.contact-link {
+.main-header .container .head-wrapper a.contact-link {
   text-transform: uppercase;
   color: black;
   font-family: "Fraunces", serif;
@@ -139,10 +137,70 @@ body {
             transform: rotate(45deg) translate(20px, 20px);
   }
 }
+.main-header .active {
+  display: block;
+}
 
 @media (max-width: 1300px) and (min-width: 1000px) {
   .main-header .title .main-title {
     font-size: 50px;
+  }
+}
+@media all and (max-width: 720px) {
+  .main-header {
+    padding: 20px 45px;
+  }
+  .main-header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main-header .container .logo .nav-toggle {
+    display: block;
+  }
+  .main-header .container .logo .logo-title {
+    margin-bottom: 20px;
+  }
+  .main-header .container .head-wrapper a {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+    color: black;
+    opacity: 60%;
+    font-size: 20px;
+  }
+  .main-header .container .head-wrapper a.contact-link {
+    max-width: 150px;
+    margin: 15px auto;
+    opacity: 100%;
+    background-color: #ffd602;
+    font-size: 18px;
+  }
+  .main-header nav {
+    display: none;
+    width: 100%;
+    height: 150%;
+    padding: 20px 0;
+    margin: 20px 0;
+    background-color: #ffffff;
+    position: relative;
+  }
+  .main-header nav:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #ffffff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid #ffffff;
+    right: 0;
+    top: -29px;
   }
 }
 .container {

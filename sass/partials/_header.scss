@@ -7,12 +7,15 @@
   padding: 40px 65px;
   position: relative;
 
-  .head-wrapper {
-    width: 100%;
-    height: 50px;
-    display: flex;
+  .container {
     justify-content: space-between;
-    align-items: center;
+
+    .logo .nav-toggle {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 45px;
+    }
 
     .logo-title {
       color: white;
@@ -22,7 +25,7 @@
       font-size: 40px;
     }
 
-    .nav-menu a {
+    .head-wrapper a {
       text-decoration: none;
       color: white;
       padding: 0 20px;
@@ -41,6 +44,7 @@
       }
     }
   }
+
   .title {
     display: flex;
     justify-content: center;
@@ -91,10 +95,74 @@
       }
     }
   }
+
+  .active {
+    display: block;
+  }
 }
 
 @media (max-width: 1300px) and (min-width: 1000px) {
   .main-header .title .main-title {
     font-size: 50px;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .main-header {
+    padding: 20px 45px;
+
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .logo .nav-toggle {
+        display: block;
+      }
+
+      .logo .logo-title {
+        margin-bottom: 20px;
+      }
+
+      .head-wrapper a {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 15px 0;
+        color: black;
+        opacity: 60%;
+        font-size: 20px;
+      }
+
+      .head-wrapper a.contact-link {
+        max-width: 150px;
+        margin: 15px auto;
+        opacity: 100%;
+        background-color: #ffd602;
+        font-size: 18px;
+      }
+    }
+
+    nav {
+      display: none;
+      width: 100%;
+      height: 150%;
+      padding: 20px 0;
+      margin: 20px 0;
+      background-color: #ffffff;
+      position: relative;
+    }
+
+    nav:before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 15px solid transparent;
+      border-right: 15px solid #ffffff;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid #ffffff;
+      right: 0;
+      top: -29px;
+    }
   }
 }
