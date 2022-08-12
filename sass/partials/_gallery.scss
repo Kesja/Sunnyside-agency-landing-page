@@ -1,11 +1,28 @@
-.img-gallery img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
+.img-gallery {
+  display: flex;
+
+  img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 1300px) {
   .img-gallery img {
     width: 25%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .img-gallery {
+    flex-wrap: wrap;
+    overflow: hidden;    
+
+    img {
+      width: 50%;
+      height: 250px;
+      
+    }
   }
 }
